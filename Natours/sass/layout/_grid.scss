@@ -4,7 +4,6 @@
   in size. Example, if avail space < 1140px, the width will shrink
   so thats much more responsive than setting regular width */
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
 
   //.row:not()
@@ -21,7 +20,6 @@
   //in which the class attribute start with col-
   //so it selects all cols at the same time
   [class^="col-"] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {
