@@ -65,6 +65,8 @@
 }
 
 .btn-text {
+  position: relative;
+  z-index: 1;
   &:link,
   &:visited {
     font-size: $default-font-size;
