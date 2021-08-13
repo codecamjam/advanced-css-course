@@ -52,11 +52,15 @@ body {
 
 .sidebar {
   background-color: var(--color-grey-dark-1);
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .hotel-view {
   background-color: orangered;
-  flex: 1; }
+  flex: 1;
+  height: 80rem; }
 
 .logo {
   height: 3.25rem;
@@ -135,3 +139,13 @@ body {
     margin-right: 1rem; }
   .user-nav__user-name {
     font-size: 1.5rem; }
+
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-grey-light-4);
+  padding: 2.5rem; }
