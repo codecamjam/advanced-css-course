@@ -20,6 +20,7 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s;
+    height: 50rem;
   }
 
   &__left {
@@ -88,12 +89,19 @@
   }
 
   &__close-bg {
-    background-color: rgba($color-black, 0.7);
     height: 100vh;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     cursor: default;
+    background-color: rgba($color-black, 0.7);
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or
+      (backdrop-filter: blur(10px)) {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba($color-black, 0.3);
+    }
   }
 }
